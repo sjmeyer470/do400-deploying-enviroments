@@ -27,7 +27,7 @@ pipeline{
             steps {
                 sh '''
                     ./mvnw quarkus:add-extension \
-                    -Dextensions="kuberneties,container-image-jib"
+                    -Dextensions="kubernetes,container-image-jib"
                 '''
                 sh '''
                     ./mvnw package -DskipTest \
